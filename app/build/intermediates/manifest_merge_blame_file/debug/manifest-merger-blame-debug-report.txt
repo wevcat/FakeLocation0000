@@ -1,0 +1,193 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.fakelocation.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Location permissions -->
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:6:5-79
+12-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:7:5-81
+13-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:7:22-78
+14
+15    <!-- Mock location permission (dangerous permission) -->
+16    <uses-permission android:name="android.permission.MOCK_LOCATION" />
+16-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:10:5-11:49
+16-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:10:22-69
+17
+18    <!-- Foreground service permission for continuous location updates -->
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+19-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:14:5-77
+19-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:14:22-74
+20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+20-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:15:5-86
+20-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:15:22-83
+21
+22    <!-- Internet for map tiles (optional) -->
+23    <uses-permission android:name="android.permission.INTERNET" />
+23-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:18:5-67
+23-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:18:22-64
+24
+25    <permission
+25-->[androidx.core:core:1.12.0] /Users/wjtlj/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+26        android:name="com.fakelocation.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.12.0] /Users/wjtlj/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.12.0] /Users/wjtlj/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.fakelocation.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.12.0] /Users/wjtlj/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.12.0] /Users/wjtlj/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:20:5-46:19
+32        android:name="com.fakelocation.app.FakeLocationApp"
+32-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:21:9-40
+33        android:allowBackup="true"
+33-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:22:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.12.0] /Users/wjtlj/.gradle/caches/transforms-3/66eab059273d7711764ca64e2bd58a42/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+35        android:debuggable="true"
+36        android:extractNativeLibs="false"
+37        android:icon="@drawable/ic_launcher_foreground"
+37-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:23:9-56
+38        android:label="@string/app_name"
+38-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:24:9-41
+39        android:roundIcon="@drawable/ic_launcher_foreground"
+39-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:25:9-61
+40        android:supportsRtl="true"
+40-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:26:9-35
+41        android:theme="@style/Theme.FakeLocation" >
+41-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:27:9-50
+42        <activity
+42-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:30:9-38:20
+43            android:name="com.fakelocation.app.MainActivity"
+43-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:31:13-41
+44            android:exported="true"
+44-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:32:13-36
+45            android:theme="@style/Theme.FakeLocation" >
+45-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:33:13-54
+46            <intent-filter>
+46-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:34:13-37:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:35:17-69
+47-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:35:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:36:17-77
+49-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:36:27-74
+50            </intent-filter>
+51        </activity>
+52
+53        <!-- Location spoofing service -->
+54        <service
+54-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:41:9-44:56
+55            android:name="com.fakelocation.app.location.LocationSpoofingService"
+55-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:42:13-61
+56            android:exported="false"
+56-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:43:13-37
+57            android:foregroundServiceType="location" />
+57-->/Users/wjtlj/Desktop/稿件/FakeLocation/app/src/main/AndroidManifest.xml:44:13-53
+58
+59        <activity
+59-->[com.google.android.gms:play-services-base:18.1.0] /Users/wjtlj/.gradle/caches/transforms-3/4ccf9a92205e02f4f5a52b8057254065/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+60            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+60-->[com.google.android.gms:play-services-base:18.1.0] /Users/wjtlj/.gradle/caches/transforms-3/4ccf9a92205e02f4f5a52b8057254065/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+61            android:exported="false"
+61-->[com.google.android.gms:play-services-base:18.1.0] /Users/wjtlj/.gradle/caches/transforms-3/4ccf9a92205e02f4f5a52b8057254065/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+62            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+62-->[com.google.android.gms:play-services-base:18.1.0] /Users/wjtlj/.gradle/caches/transforms-3/4ccf9a92205e02f4f5a52b8057254065/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+63        <activity
+63-->[androidx.compose.ui:ui-tooling-android:1.5.4] /Users/wjtlj/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+64            android:name="androidx.compose.ui.tooling.PreviewActivity"
+64-->[androidx.compose.ui:ui-tooling-android:1.5.4] /Users/wjtlj/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+65            android:exported="true" />
+65-->[androidx.compose.ui:ui-tooling-android:1.5.4] /Users/wjtlj/.gradle/caches/transforms-3/526307f7b43e930470841c0e92ede009/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+66        <activity
+66-->[androidx.compose.ui:ui-test-manifest:1.5.4] /Users/wjtlj/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:23:9-25:39
+67            android:name="androidx.activity.ComponentActivity"
+67-->[androidx.compose.ui:ui-test-manifest:1.5.4] /Users/wjtlj/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:24:13-63
+68            android:exported="true" />
+68-->[androidx.compose.ui:ui-test-manifest:1.5.4] /Users/wjtlj/.gradle/caches/transforms-3/d2d450898919ffa6b13326864ae67de5/transformed/ui-test-manifest-1.5.4/AndroidManifest.xml:25:13-36
+69
+70        <provider
+70-->[androidx.emoji2:emoji2:1.4.0] /Users/wjtlj/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+71            android:name="androidx.startup.InitializationProvider"
+71-->[androidx.emoji2:emoji2:1.4.0] /Users/wjtlj/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+72            android:authorities="com.fakelocation.app.androidx-startup"
+72-->[androidx.emoji2:emoji2:1.4.0] /Users/wjtlj/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+73            android:exported="false" >
+73-->[androidx.emoji2:emoji2:1.4.0] /Users/wjtlj/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+74            <meta-data
+74-->[androidx.emoji2:emoji2:1.4.0] /Users/wjtlj/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+75-->[androidx.emoji2:emoji2:1.4.0] /Users/wjtlj/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+76                android:value="androidx.startup" />
+76-->[androidx.emoji2:emoji2:1.4.0] /Users/wjtlj/.gradle/caches/transforms-3/6e7435505173a793f56e9a38678f800a/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+77            <meta-data
+77-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/wjtlj/.gradle/caches/transforms-3/515fb94898fafb90668c8c9280482c96/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+78                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+78-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/wjtlj/.gradle/caches/transforms-3/515fb94898fafb90668c8c9280482c96/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+79                android:value="androidx.startup" />
+79-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/wjtlj/.gradle/caches/transforms-3/515fb94898fafb90668c8c9280482c96/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+80            <meta-data
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+81                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+82                android:value="androidx.startup" />
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+83        </provider>
+84
+85        <meta-data
+85-->[com.google.android.gms:play-services-basement:18.1.0] /Users/wjtlj/.gradle/caches/transforms-3/f0e0373f982c296e9022f45ca8f895eb/transformed/play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+86            android:name="com.google.android.gms.version"
+86-->[com.google.android.gms:play-services-basement:18.1.0] /Users/wjtlj/.gradle/caches/transforms-3/f0e0373f982c296e9022f45ca8f895eb/transformed/play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+87            android:value="@integer/google_play_services_version" />
+87-->[com.google.android.gms:play-services-basement:18.1.0] /Users/wjtlj/.gradle/caches/transforms-3/f0e0373f982c296e9022f45ca8f895eb/transformed/play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+88
+89        <receiver
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+90            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+91            android:directBootAware="false"
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+92            android:enabled="true"
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+93            android:exported="true"
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+94            android:permission="android.permission.DUMP" >
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+96                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+99                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+102                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+105                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/wjtlj/.gradle/caches/transforms-3/0ff0f1e5a538543bd4c2abf68d816b50/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+106            </intent-filter>
+107        </receiver>
+108    </application>
+109
+110</manifest>
